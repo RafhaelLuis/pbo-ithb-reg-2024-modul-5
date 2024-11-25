@@ -29,7 +29,7 @@ public class Ktp {
         this.jenisKelamin = jenisKelamin;
         this.golonganDarah = golonganDarah;
         this.alamat = alamat;
-        this.rtRw = rtRw;
+        this.RtRw = rtRw;
         this.kelDesa = kelDesa;
         this.kecamatan = kecamatan;
         this.agama = agama;
@@ -97,11 +97,11 @@ public class Ktp {
     }
 
     public String getRtRw() {
-        return rtRw;
+        return RtRw;
     }
 
     public void setRtRw(String rtRw) {
-        this.rtRw = rtRw;
+        this.RtRw = rtRw;
     }
 
     public String getKelDesa() {
