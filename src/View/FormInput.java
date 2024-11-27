@@ -9,21 +9,21 @@ public class FormInput {
 
     private static JLabel labelNIK;
     private static JTextField inputNIK;
-    
-    public FormInput(){
+
+    public FormInput() {
         InputData();
     }
 
-    public void InputData(){
+    public void InputData() {
         JFrame jFrame = new JFrame();
         JPanel jPanel = new JPanel();
         jFrame.setBounds(1920 / 2 - 500, 1080 / 2 - 400, 400, 400);
-        jFrame.setDefaultCloseOperation(jFrame.DISPOSE_ON_CLOSE); 
+        jFrame.setDefaultCloseOperation(jFrame.DISPOSE_ON_CLOSE);
         jPanel.setLayout(null);
         jFrame.add(jPanel);
-        
+
         JLabel judulLabel = new JLabel("Input Data KTP");
-        judulLabel.setBounds(140,20,1000,25);
+        judulLabel.setBounds(140, 20, 1000, 25);
         jPanel.add(judulLabel);
 
         labelNIK = new JLabel("NIK :");
@@ -46,6 +46,7 @@ public class FormInput {
         inputTempatLahir.setBounds(130, 100, 225, 25);
         jPanel.add(labelTempatLahir);
         jPanel.add(inputTempatLahir);
+
 
         JLabel labelTanggalLahir = new JLabel("Tanggal Lahir :");
         JTextField inputTanggalLahir = new JTextField(20);
@@ -131,8 +132,7 @@ public class FormInput {
         jPanel.add(labelBerlakuHingga);
         jPanel.add(inputBerlakuHingga);
 
-        jFrame.setVisible(true);        
-        
+        jFrame.setVisible(true);
 
     }
 }
