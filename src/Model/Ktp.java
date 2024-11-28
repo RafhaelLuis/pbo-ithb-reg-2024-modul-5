@@ -1,45 +1,71 @@
 package Model;
 
-public class Ktp {
+import java.io.File;
+
+public class KTP {
+
     private String nik;
     private String nama;
     private String tempatLahir;
     private String tanggalLahir;
     private String jenisKelamin;
-    private String golonganDarah;
+    private String golDarah;
     private String alamat;
-    private String RtRw;
+    private String rtRW;
     private String kelDesa;
     private String kecamatan;
     private String agama;
     private String statusPerkawinan;
     private String pekerjaan;
     private String kewarganegaraan;
+    private String wargaNegaraAsal;
+    private File fotoFilePath;
+    private File tandaTanganFilePath;
     private String berlakuHingga;
+    private String kotaPembuatan;
+    private String tanggalPembuatan;
 
-    // Constructor
-    public Ktp(String nik, String nama, String tempatLahir, String tanggalLahir, String jenisKelamin, 
-               String golonganDarah, String alamat, String rtRw, String kelDesa, String kecamatan, 
-               String agama, String statusPerkawinan, String pekerjaan, String kewarganegaraan, 
-               String berlakuHingga) {
+    @Override
+    public String toString() {
+        return "KTP [nik=" + nik + ", nama=" + nama + ", tempatLahir=" + tempatLahir + ", tanggalLahir=" + tanggalLahir
+                + ", jenisKelamin=" + jenisKelamin + ", golDarah=" + golDarah + ", alamat=" + alamat + ", rt/rw=" + rtRW + ", kelDesa=" + kelDesa + ", kecamatan=" + kecamatan + ", agama=" + agama
+                + ", statusPerkawinan=" + statusPerkawinan + ", pekerjaan=" + pekerjaan + ", kewarganegaraan="
+                + kewarganegaraan + ", wargaNegaraAsal=" + wargaNegaraAsal + ", fotoFilePath=" + fotoFilePath
+                + ", tandaTanganFilePath=" + tandaTanganFilePath + ", berlakuHingga=" + berlakuHingga
+                + ", kotaPembuatan=" + kotaPembuatan + ", tanggalPembuatan=" + tanggalPembuatan + "]";
+    }
+
+    public KTP() {
+
+    }
+
+    public KTP(String nik, String nama, String tempatLahir, String tanggalLahir, String jenisKelamin,
+            String golDarah, String alamat, String rtRw, String kelDesa, String kecamatan, String agama,
+            String statusPerkawinan, String pekerjaan, String kewarganegaraan, String wargaNegaraAsal,
+            File fotoFilePath, File tandaTanganFilePath, String berlakuHingga, String kotaPembuatan,
+            String tanggalPembuatan) {
         this.nik = nik;
         this.nama = nama;
         this.tempatLahir = tempatLahir;
         this.tanggalLahir = tanggalLahir;
         this.jenisKelamin = jenisKelamin;
-        this.golonganDarah = golonganDarah;
+        this.golDarah = golDarah;
         this.alamat = alamat;
-        this.RtRw = rtRw;
+        this.rtRW = rtRw;
         this.kelDesa = kelDesa;
         this.kecamatan = kecamatan;
         this.agama = agama;
         this.statusPerkawinan = statusPerkawinan;
         this.pekerjaan = pekerjaan;
         this.kewarganegaraan = kewarganegaraan;
+        this.wargaNegaraAsal = wargaNegaraAsal;
+        this.fotoFilePath = fotoFilePath;
+        this.tandaTanganFilePath = tandaTanganFilePath;
         this.berlakuHingga = berlakuHingga;
+        this.kotaPembuatan = kotaPembuatan;
+        this.tanggalPembuatan = tanggalPembuatan;
     }
 
-    // Getter dan Setter
     public String getNik() {
         return nik;
     }
@@ -80,12 +106,12 @@ public class Ktp {
         this.jenisKelamin = jenisKelamin;
     }
 
-    public String getGolonganDarah() {
-        return golonganDarah;
+    public String getGolDarah() {
+        return golDarah;
     }
 
-    public void setGolonganDarah(String golonganDarah) {
-        this.golonganDarah = golonganDarah;
+    public void setGolDarah(String golDarah) {
+        this.golDarah = golDarah;
     }
 
     public String getAlamat() {
@@ -96,12 +122,12 @@ public class Ktp {
         this.alamat = alamat;
     }
 
-    public String getRtRw() {
-        return RtRw;
+    public String getRtRW() {
+        return rtRW;
     }
 
-    public void setRtRw(String rtRw) {
-        this.RtRw = rtRw;
+    public void setRtRW(String rtRW) {
+        this.rtRW = rtRW;
     }
 
     public String getKelDesa() {
@@ -152,6 +178,30 @@ public class Ktp {
         this.kewarganegaraan = kewarganegaraan;
     }
 
+    public String getWargaNegaraAsal() {
+        return wargaNegaraAsal;
+    }
+
+    public void setWargaNegaraAsal(String wargaNegaraAsal) {
+        this.wargaNegaraAsal = wargaNegaraAsal;
+    }
+
+    public File getFotoFilePath() {
+        return fotoFilePath;
+    }
+
+    public void setFotoFilePath(File fotoFilePath) {
+        this.fotoFilePath = fotoFilePath;
+    }
+
+    public File getTandaTanganFilePath() {
+        return tandaTanganFilePath;
+    }
+
+    public void setTandaTanganFilePath(File tandaTanganFilePath) {
+        this.tandaTanganFilePath = tandaTanganFilePath;
+    }
+
     public String getBerlakuHingga() {
         return berlakuHingga;
     }
@@ -159,4 +209,21 @@ public class Ktp {
     public void setBerlakuHingga(String berlakuHingga) {
         this.berlakuHingga = berlakuHingga;
     }
+
+    public String getKotaPembuatan() {
+        return kotaPembuatan;
+    }
+
+    public void setKotaPembuatan(String kotaPembuatan) {
+        this.kotaPembuatan = kotaPembuatan;
+    }
+
+    public String getTanggalPembuatan() {
+        return tanggalPembuatan;
+    }
+
+    public void setTanggalPembuatan(String tanggalPembuatan) {
+        this.tanggalPembuatan = tanggalPembuatan;
+    }
+
 }
